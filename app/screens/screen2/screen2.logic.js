@@ -29,7 +29,8 @@ class Screen2Logic extends Component {
 
 Screen2Logic.propTypes = {
   toStyle: PropTypes.func.isRequired,
-  currentData: PropTypes.func.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  currentData: PropTypes.object.isRequired,
 };
 
 export default Screen2Logic;

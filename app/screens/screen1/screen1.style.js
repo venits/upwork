@@ -9,7 +9,8 @@ import {
   Block,
   Button,
   StyledText,
-  Circle
+  // eslint-disable-next-line comma-dangle
+  Circle,
 } from 'app/components/UI/core';
 
 const Screen1Style = ({ logic, state }) => {

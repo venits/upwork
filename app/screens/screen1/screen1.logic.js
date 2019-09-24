@@ -52,6 +52,7 @@ class Screen1Logic extends Component {
   };
 
   submit = () => {
+    // eslint-disable-next-line react/destructuring-assignment
     this.props.updateCountry({
       variables: {
         code: 'JA',
@@ -86,6 +87,7 @@ class Screen1Logic extends Component {
 Screen1Logic.propTypes = {
   toStyle: PropTypes.func.isRequired,
   currentData: PropTypes.func.isRequired,
+  updateCountry: PropTypes.func.isRequired,
 };
 
 const sendMutationTo = compose(graphql(updateCountry, { name: 'updateCountry' }));
